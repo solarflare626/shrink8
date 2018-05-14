@@ -1,0 +1,24 @@
+// ==UserScript==
+// @name         shrink8
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://shrink8.com/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Your code here...
+    setInterval(function(){ 
+         var TargetLink = $("a:contains('Get Link')");
+      
+        if (TargetLink.length){
+            document.getElementsByClassName('get-link')[0].click();
+        }
+     
+    }, 10000);
+
+})();

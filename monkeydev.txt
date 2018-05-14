@@ -1,0 +1,21 @@
+// ==UserScript==
+// @name         anonymous.monkeydevteam.com
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://anonymous.monkeydevteam.com:3000/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+
+
+    // Your code here...
+    setTimeout(function(){ 
+        window.location='https://shrink8.com/st/?api=84db39460b382d04676ae05e27c7379a3e439421&url=anonymous.monkeydevteam.com:3000/api/Questions/'+getRandomInt(1000); }, 3000);
+})();
